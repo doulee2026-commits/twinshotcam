@@ -3,60 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TwinShotCam · 隐私政策 / Privacy Policy</title>
+<title>TwinShotCam · 隐私政策 · 服务条款 · 技术支持</title>
 <style>
   :root {
-    --bg: #0E0E10;
-    --bg-grad: #15121C;
-    --card: #1A1A1F;
+    --bg: #0E0E10; --bg-grad: #15121C; --card: #1A1A1F;
     --border: rgba(255,255,255,0.09);
-    --text: #FFFFFF;
-    --text-2: #A0A0AA;
-    --text-3: #6A6A73;
-    --primary: #A555FF;
-    --cyan: #3FDEFF;
+    --text: #FFFFFF; --text-2: #A0A0AA; --text-3: #6A6A73;
+    --primary: #A555FF; --cyan: #3FDEFF;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
+  html { scroll-behavior: smooth; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Segoe UI", Roboto, sans-serif;
     color: var(--text);
-    background:
-      radial-gradient(120% 70% at 50% -10%, var(--bg-grad) 0%, var(--bg) 46%),
-      var(--bg);
-    min-height: 100vh;
-    line-height: 1.6;
+    background: radial-gradient(120% 70% at 50% -10%, var(--bg-grad) 0%, var(--bg) 46%), var(--bg);
+    min-height: 100vh; line-height: 1.6;
   }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
-  header { text-align: center; margin-bottom: 40px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 44px 24px 80px; }
+  header { text-align: center; margin-bottom: 28px; }
   .badge {
     display: inline-flex; align-items: center; gap: 8px;
     font-size: 13px; font-weight: 600; color: var(--primary);
-    background: rgba(165,85,255,0.12);
-    border: 1px solid rgba(165,85,255,0.4);
+    background: rgba(165,85,255,0.12); border: 1px solid rgba(165,85,255,0.4);
     padding: 6px 14px; border-radius: 999px; margin-bottom: 18px;
   }
   h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.5px; }
   .sub { color: var(--text-2); font-size: 15px; margin-top: 8px; }
-  .langbar { display: flex; justify-content: center; gap: 8px; margin: 24px 0 8px; }
+  .langbar { display: flex; justify-content: center; gap: 8px; margin: 22px 0 6px; }
   .langbtn {
     font-size: 14px; font-weight: 600; color: var(--text-2);
     background: var(--card); border: 1px solid var(--border);
     padding: 7px 16px; border-radius: 999px; cursor: pointer; transition: all .15s;
   }
   .langbtn.active { color: #fff; background: var(--primary); border-color: var(--primary); }
-  section { background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+  nav.toc {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+    padding: 12px 0; margin-bottom: 8px;
+    background: rgba(14,14,16,0.82); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  nav.toc a {
+    font-size: 13.5px; font-weight: 600; color: var(--cyan);
+    text-decoration: none; padding: 6px 14px; border-radius: 999px;
+    border: 1px solid rgba(63,222,255,0.3);
+  }
+  nav.toc a:hover { background: rgba(63,222,255,0.12); }
+  section.block { background: var(--card); border: 1px solid var(--border); border-radius: 16px;
             padding: 22px 24px; margin-top: 16px; }
-  h2 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+  .block-title { font-size: 22px; font-weight: 800; margin: 36px 0 4px; padding-left: 4px; scroll-margin-top: 70px; }
+  h2 { font-size: 17px; font-weight: 700; margin: 16px 0 8px; }
+  h2:first-child { margin-top: 0; }
   p { color: var(--text-2); font-size: 15px; margin-bottom: 10px; }
   p:last-child { margin-bottom: 0; }
   .hl { color: var(--cyan); font-weight: 600; }
-  ul { color: var(--text-2); font-size: 15px; padding-left: 20px; margin: 6px 0; }
-  li { margin-bottom: 6px; }
-  a { color: var(--cyan); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .updated { text-align: center; color: var(--text-3); font-size: 13px; margin-top: 32px; }
+  a.inline { color: var(--cyan); text-decoration: none; }
+  a.inline:hover { text-decoration: underline; }
+  .updated { color: var(--text-3); font-size: 13px; margin-top: 18px; padding-left: 4px; }
   .lang-zh, .lang-en { display: none; }
   .lang-zh.show, .lang-en.show { display: block; }
+  span.lang-zh.show, span.lang-en.show { display: inline; }
 </style>
 </head>
 <body>
@@ -64,144 +70,147 @@
   <header>
     <div class="badge">🔒 100% On-Device · 本机运行</div>
     <h1>TwinShotCam</h1>
-    <div class="sub">隐私政策 / Privacy Policy</div>
+    <div class="sub">隐私政策 · 服务条款 · 技术支持 / Privacy · Terms · Support</div>
     <div class="langbar">
       <button class="langbtn active" onclick="setLang('zh')">中文</button>
       <button class="langbtn" onclick="setLang('en')">English</button>
     </div>
   </header>
 
-  <!-- ===================== 中文 ===================== -->
-  <div class="lang-zh show">
-    <section>
+  <nav class="toc">
+    <a href="#privacy"><span class="lang-zh show">隐私政策</span><span class="lang-en">Privacy</span></a>
+    <a href="#terms"><span class="lang-zh show">服务条款</span><span class="lang-en">Terms (EULA)</span></a>
+    <a href="#support"><span class="lang-zh show">技术支持</span><span class="lang-en">Support</span></a>
+  </nav>
+
+  <!-- ==================== 隐私政策 PRIVACY ==================== -->
+  <div class="block-title" id="privacy">
+    <span class="lang-zh show">隐私政策</span><span class="lang-en">Privacy Policy</span>
+  </div>
+  <section class="block">
+    <div class="lang-zh show">
       <h2>1. 总览</h2>
-      <p>TwinShotCam（“戏精相机”）是一款<span class="hl">完全在你的设备本机运行</span>的相机应用。我们的设计原则是：你的内容属于你，我们不需要、也不会收集它。</p>
-    </section>
-
-    <section>
+      <p>TwinShotCam（“戏精相机”）是一款<span class="hl">完全在你的设备本机运行</span>的相机应用。你的内容属于你，我们不需要、也不会收集它。</p>
       <h2>2. 我们收集什么</h2>
-      <p>答案是：<span class="hl">什么都不收集</span>。我们没有账号系统、没有服务器、没有任何分析、追踪、推送或广告 SDK，也不申请任何网络访问例外。</p>
-    </section>
-
-    <section>
+      <p>答案是：<span class="hl">什么都不收集</span>。没有账号、没有服务器、没有任何分析、追踪、推送或广告 SDK。</p>
       <h2>3. 相机与麦克风</h2>
-      <p>应用使用相机进行前后双摄录制，使用麦克风录制视频声音。所有画面与声音<span class="hl">仅在你的设备本机实时处理与合成</span>，生成的视频只保存在你的系统相册中，由你完全掌控。我们不会上传、存储或访问这些内容。</p>
-    </section>
-
-    <section>
-      <h2>4. 面部数据说明</h2>
-      <p>“不要笑挑战”使用设备的 ARKit / Vision 能力，实时判断你是否在微笑或大笑。<span class="hl">该处理仅在本机实时进行</span>，用于驱动游戏逻辑。我们不单独保存任何面部特征数据，更不会上传或与任何第三方共享。</p>
-    </section>
-
-    <section>
+      <p>应用使用相机进行前后双摄录制，使用麦克风录制视频声音。所有画面与声音<span class="hl">仅在本机实时处理与合成</span>，生成的视频只保存到你的系统相册，我们不会上传、存储或访问。</p>
+      <h2>4. 面部数据</h2>
+      <p>“不要笑挑战”使用设备的 ARKit / Vision 能力，实时判断你是否在微笑或大笑。<span class="hl">该处理仅在本机实时进行</span>，用于驱动游戏。我们不单独保存任何面部特征数据，更不会上传或与任何第三方共享。</p>
       <h2>5. 相册访问</h2>
-      <p>应用在你保存视频时请求相册写入权限，在你导入自定义挑战素材时请求读取权限。访问仅用于你主动发起的操作，<span class="hl">不会扫描或读取你相册中的其他内容</span>。</p>
-    </section>
-
-    <section>
+      <p>保存视频时请求写入权限，导入挑战素材时请求读取权限。仅用于你主动发起的操作，<span class="hl">不会扫描你相册中的其他内容</span>。</p>
       <h2>6. 内购与订阅</h2>
-      <p>Pro 订阅与买断通过 Apple 的 App Store 内购（StoreKit）完成。支付由 Apple 处理，<span class="hl">我们不接触你的支付信息</span>。订阅管理与取消可在你的 App Store 账户设置中进行。</p>
-    </section>
-
-    <section>
-      <h2>7. 第三方 SDK</h2>
-      <p>无。应用不集成任何第三方分析、追踪、推送或广告组件。</p>
-    </section>
-
-    <section>
-      <h2>8. 儿童隐私</h2>
-      <p>由于本应用不收集任何个人数据，因此不会收集儿童的个人信息。</p>
-    </section>
-
-    <section>
-      <h2>9. 你的权利</h2>
-      <p>你随时可以删除应用以清除所有本地数据。由于我们不持有你的任何数据，无需向我们提出删除请求。</p>
-    </section>
-
-    <section>
-      <h2>10. 政策更新</h2>
-      <p>若本政策有任何变更，我们会更新本页面并修改下方的“最后更新”日期。</p>
-    </section>
-
-    <section>
-      <h2>11. 联系我们</h2>
-      <p>如有任何疑问，请联系 <a href="mailto:doulee2026@hotmail.com">doulee2026@hotmail.com</a>。</p>
-    </section>
-
-    <div class="updated">最后更新：2026 年 6 月 6 日</div>
-  </div>
-
-  <!-- ===================== English ===================== -->
-  <div class="lang-en">
-    <section>
+      <p>Pro 通过 Apple App Store 内购完成。支付由 Apple 处理，<span class="hl">我们不接触你的支付信息</span>。</p>
+      <h2>7. 第三方 SDK / 儿童隐私 / 你的权利</h2>
+      <p>无任何第三方组件。本应用不收集个人数据，因此不会收集儿童信息。你随时可删除应用以清除全部本地数据。</p>
+      <h2>8. 联系我们</h2>
+      <p>如有疑问，请联系 <a class="inline" href="mailto:doulee2026@hotmail.com">doulee2026@hotmail.com</a>。</p>
+      <div class="updated">最后更新：2026 年 6 月 10 日</div>
+    </div>
+    <div class="lang-en">
       <h2>1. Overview</h2>
-      <p>TwinShotCam is a camera app that runs <span class="hl">entirely on your device</span>. Our design principle is simple: your content belongs to you. We don't need it, and we don't collect it.</p>
-    </section>
-
-    <section>
+      <p>TwinShotCam is a camera app that runs <span class="hl">entirely on your device</span>. Your content belongs to you — we don't need it and we don't collect it.</p>
       <h2>2. What We Collect</h2>
-      <p>The answer is: <span class="hl">nothing at all</span>. There are no accounts, no servers, and no analytics, tracking, push, or advertising SDKs. We request no network access exceptions.</p>
-    </section>
-
-    <section>
+      <p>The answer is: <span class="hl">nothing at all</span>. No accounts, no servers, and no analytics, tracking, push, or advertising SDKs.</p>
       <h2>3. Camera & Microphone</h2>
-      <p>The app uses the camera for front-and-back dual recording, and the microphone to capture audio. All video and audio are <span class="hl">processed and composited locally on your device in real time</span>. The resulting videos are saved only to your system Photos library, fully under your control. We never upload, store, or access this content.</p>
-    </section>
-
-    <section>
+      <p>The camera is used for front-and-back dual recording and the microphone for audio. All video and audio are <span class="hl">processed and composited locally in real time</span>. Resulting videos are saved only to your Photos library. We never upload, store, or access this content.</p>
       <h2>4. Facial Data</h2>
-      <p>The "Hold Your Laugh" challenge uses on-device ARKit / Vision to detect in real time whether you are smiling or laughing. <span class="hl">This processing happens entirely on-device</span> to drive the game. We do not store any facial feature data separately, nor do we upload or share it with any third party.</p>
-    </section>
-
-    <section>
+      <p>The "Hold Your Laugh" challenge uses on-device ARKit / Vision to detect in real time whether you are smiling or laughing. <span class="hl">This processing happens entirely on-device to drive the game.</span> We do not store any facial feature data separately, nor do we upload or share it with any third party.</p>
       <h2>5. Photo Library Access</h2>
-      <p>The app requests write access to save videos, and read access when you import your own challenge clips. Access is used solely for actions you initiate; <span class="hl">we do not scan or read other content in your library</span>.</p>
-    </section>
+      <p>Write access is requested to save videos; read access when you import challenge clips. Used only for actions you initiate; <span class="hl">we do not scan other content in your library</span>.</p>
+      <h2>6. In-App Purchases</h2>
+      <p>Pro is handled via Apple's App Store. Payments are processed by Apple — <span class="hl">we never see your payment information</span>.</p>
+      <h2>7. Third-Party SDKs / Children / Your Rights</h2>
+      <p>No third-party components. The app collects no personal data, hence none from children. Delete the app anytime to erase all local data.</p>
+      <h2>8. Contact</h2>
+      <p>Questions? Email <a class="inline" href="mailto:doulee2026@hotmail.com">doulee2026@hotmail.com</a>.</p>
+      <div class="updated">Last updated: June 10, 2026</div>
+    </div>
+  </section>
 
-    <section>
-      <h2>6. In-App Purchases & Subscriptions</h2>
-      <p>Pro subscriptions and the lifetime unlock are handled through Apple's App Store In-App Purchase (StoreKit). Payments are processed by Apple — <span class="hl">we never see your payment information</span>. You can manage or cancel subscriptions in your App Store account settings.</p>
-    </section>
-
-    <section>
-      <h2>7. Third-Party SDKs</h2>
-      <p>None. The app integrates no third-party analytics, tracking, push, or advertising components.</p>
-    </section>
-
-    <section>
-      <h2>8. Children's Privacy</h2>
-      <p>Because the app collects no personal data, it does not collect personal information from children.</p>
-    </section>
-
-    <section>
-      <h2>9. Your Rights</h2>
-      <p>You can delete the app at any time to erase all local data. Since we hold none of your data, no deletion request to us is necessary.</p>
-    </section>
-
-    <section>
-      <h2>10. Changes to This Policy</h2>
-      <p>If this policy changes, we will update this page and revise the "Last updated" date below.</p>
-    </section>
-
-    <section>
-      <h2>11. Contact Us</h2>
-      <p>If you have any questions, contact <a href="mailto:doulee2026@hotmail.com">doulee2026@hotmail.com</a>.</p>
-    </section>
-
-    <div class="updated">Last updated: June 6, 2026</div>
+  <!-- ==================== 服务条款 TERMS / EULA ==================== -->
+  <div class="block-title" id="terms">
+    <span class="lang-zh show">服务条款（最终用户许可协议 EULA）</span><span class="lang-en">Terms of Use (EULA)</span>
   </div>
+  <section class="block">
+    <div class="lang-zh show">
+      <h2>1. 许可授予</h2>
+      <p>我们授予你一项非独占、不可转让的许可，允许你在自有的 Apple 设备上、依据 App Store 使用规则使用 TwinShotCam。</p>
+      <h2>2. 使用限制</h2>
+      <p>你不得对应用进行反编译、逆向工程、出租、出借或再分发，也不得将其用于任何违法用途。</p>
+      <h2>3. 订阅与内购</h2>
+      <p>TwinShotCam Pro 提供周订阅、年订阅及一次性终身买断。订阅价格、时长在应用内购买页与系统购买弹窗中清晰展示。<span class="hl">订阅会在当前周期结束前 24 小时自动续费</span>，除非在到期前至少 24 小时关闭自动续订。你可随时在 App Store 账户设置中管理或取消订阅。购买后费用通过你的 Apple 账户结算。</p>
+      <h2>4. 用户内容</h2>
+      <p>你使用本应用创作的所有视频内容均归你所有。这些内容仅保存在你的设备本机与系统相册中，我们不会访问。</p>
+      <h2>5. 免责声明</h2>
+      <p>本应用按“现状”提供，不附带任何明示或默示担保。在适用法律允许的最大范围内，我们不对因使用本应用造成的任何损失承担责任。</p>
+      <h2>6. 终止</h2>
+      <p>若你违反本条款，本许可自动终止。你可随时删除应用以终止本协议。</p>
+      <h2>7. 适用法律 / 联系</h2>
+      <p>本条款依据你所在地区的适用法律解释。如有疑问，请联系 <a class="inline" href="mailto:doulee2026@hotmail.com">doulee2026@hotmail.com</a>。</p>
+      <div class="updated">最后更新：2026 年 6 月 10 日</div>
+    </div>
+    <div class="lang-en">
+      <h2>1. License Grant</h2>
+      <p>We grant you a non-exclusive, non-transferable license to use TwinShotCam on Apple devices that you own, in accordance with the App Store Terms of Service.</p>
+      <h2>2. Restrictions</h2>
+      <p>You may not decompile, reverse-engineer, rent, lease, or redistribute the app, nor use it for any unlawful purpose.</p>
+      <h2>3. Subscriptions & In-App Purchases</h2>
+      <p>TwinShotCam Pro offers a weekly subscription, a yearly subscription, and a one-time lifetime purchase. Subscription price and length are clearly shown on the in-app purchase screen and the system purchase sheet. <span class="hl">Subscriptions auto-renew 24 hours before the current period ends</span> unless auto-renewal is turned off at least 24 hours prior. Manage or cancel anytime in your App Store account settings. Charges are billed to your Apple account on purchase.</p>
+      <h2>4. Your Content</h2>
+      <p>All videos you create are yours. They are stored only on your device and in your Photos library; we do not access them.</p>
+      <h2>5. Disclaimer</h2>
+      <p>The app is provided "as is" without warranties of any kind. To the maximum extent permitted by law, we are not liable for any damages arising from its use.</p>
+      <h2>6. Termination</h2>
+      <p>This license terminates automatically if you breach these terms. You may delete the app at any time to end this agreement.</p>
+      <h2>7. Governing Law / Contact</h2>
+      <p>These terms are governed by the applicable laws of your region. Questions: <a class="inline" href="mailto:doulee2026@hotmail.com">doulee2026@hotmail.com</a>.</p>
+      <div class="updated">Last updated: June 10, 2026</div>
+    </div>
+  </section>
+
+  <!-- ==================== 技术支持 SUPPORT ==================== -->
+  <div class="block-title" id="support">
+    <span class="lang-zh show">技术支持</span><span class="lang-en">Support</span>
+  </div>
+  <section class="block">
+    <div class="lang-zh show">
+      <h2>常见问题</h2>
+      <p><strong style="color:#fff">Q：怎么进行前后双摄录制？</strong><br>打开 App →「进入双摄相机」，即可同时录前后摄，支持画中画 / 左右 / 上下三种布局。</p>
+      <p><strong style="color:#fff">Q：双摄/挑战提示不支持？</strong><br>前后同拍需要 iPhone XS 及以上的双摄能力；单人不要笑挑战需要支持 ARKit 面部追踪的机型。</p>
+      <p><strong style="color:#fff">Q：合成视频有水印？</strong><br>免费版作品带 TwinShotCam 角标，升级 Pro 即可去除。</p>
+      <p><strong style="color:#fff">Q：如何取消订阅？</strong><br>打开系统「设置」→ 点你的头像 →「订阅」→ 选择 TwinShotCam → 取消。订阅在当前周期结束前 24 小时自动续费。</p>
+      <p><strong style="color:#fff">Q：我的视频会被上传吗？</strong><br>不会。录制、表情识别、视频合成全部在本机完成，我们不上传任何内容。</p>
+      <h2>联系我们</h2>
+      <p>仍有问题？请发邮件至 <a class="inline" href="mailto:doulee2026@hotmail.com">doulee2026@hotmail.com</a>，我们会尽快回复。</p>
+    </div>
+    <div class="lang-en">
+      <h2>FAQ</h2>
+      <p><strong style="color:#fff">Q: How do I record with both cameras?</strong><br>Open the app → "Dual Camera" to record front and back at once, with Picture-in-Picture / Side-by-Side / Top-Bottom layouts.</p>
+      <p><strong style="color:#fff">Q: It says dual cam / challenge isn't supported?</strong><br>Dual recording requires iPhone XS or newer; the solo Hold-Your-Laugh challenge requires a device with ARKit face tracking.</p>
+      <p><strong style="color:#fff">Q: There's a watermark on my video?</strong><br>The free version adds a TwinShotCam badge. Upgrade to Pro to remove it.</p>
+      <p><strong style="color:#fff">Q: How do I cancel a subscription?</strong><br>Open iOS Settings → your name → Subscriptions → TwinShotCam → Cancel. Subscriptions auto-renew 24 hours before the period ends.</p>
+      <p><strong style="color:#fff">Q: Are my videos uploaded?</strong><br>No. Recording, facial detection, and compositing all happen on-device. We upload nothing.</p>
+      <h2>Contact</h2>
+      <p>Still stuck? Email <a class="inline" href="mailto:doulee2026@hotmail.com">doulee2026@hotmail.com</a> and we'll get back to you.</p>
+    </div>
+  </section>
 </div>
 
 <script>
   function setLang(lang) {
     document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : 'en';
-    document.querySelector('.lang-zh').classList.toggle('show', lang === 'zh');
-    document.querySelector('.lang-en').classList.toggle('show', lang === 'en');
+    document.querySelectorAll('.lang-zh').forEach(e => e.classList.toggle('show', lang === 'zh'));
+    document.querySelectorAll('.lang-en').forEach(e => e.classList.toggle('show', lang === 'en'));
     document.querySelectorAll('.langbtn').forEach(b => b.classList.remove('active'));
     document.querySelectorAll('.langbtn')[lang === 'zh' ? 0 : 1].classList.add('active');
   }
-  // 跟随浏览器语言初始化
-  if ((navigator.language || '').toLowerCase().startsWith('en')) setLang('en');
+  // 默认显示英文；仅当浏览器语言是中文时才切到中文
+  if ((navigator.language || '').toLowerCase().startsWith('zh')) {
+    setLang('zh');
+  } else {
+    setLang('en');
+  }
 </script>
 </body>
 </html>
