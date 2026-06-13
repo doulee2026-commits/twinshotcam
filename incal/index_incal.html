@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="robots" content="index,follow">
-<title>InCal · Support &amp; Privacy</title>
+<title>Novacal · Support &amp; Privacy</title>
 <style>
   :root{
-    --primary:#FF8A3D; --primary-light:#FFF1E6;
-    --bg:#F7F7F8; --surface:#FFFFFF; --text:#1A1A1E; --muted:#8A8A8E;
-    --sep:#ECECEE; --shadow:0 6px 24px rgba(0,0,0,.06);
+    --primary:#5A46FF; --primary-light:#ECEBFF;
+    --bg:#F7F8FF; --surface:#FFFFFF; --text:#171827; --muted:#77798A;
+    --sep:#E6E8F4; --shadow:0 6px 24px rgba(27,27,77,.08);
     --radius:18px;
   }
   @media (prefers-color-scheme: dark){
-    :root{ --primary:#FFA45C; --primary-light:#3A2A1C; --bg:#0E0E10;
-      --surface:#1C1C1E; --text:#F5F5F7; --muted:#9A9A9E; --sep:#2A2A2C;
+    :root{ --primary:#7B7CFF; --primary-light:#24234A; --bg:#0D1020;
+      --surface:#171A2D; --text:#F5F6FF; --muted:#A7ABC2; --sep:#2A2F48;
       --shadow:none; }
   }
   *{box-sizing:border-box;-webkit-text-size-adjust:100%;}
@@ -24,9 +24,9 @@
   .wrap{max-width:720px;margin:0 auto;padding:20px 18px;}
   header{display:flex;align-items:center;gap:12px;margin:8px 0 4px;}
   .logo{width:46px;height:46px;border-radius:12px;flex:none;
-    background:linear-gradient(135deg,#FF7B2F,var(--primary));
+    background:linear-gradient(135deg,#8B4DFF,#5A46FF);
     display:flex;align-items:center;justify-content:center;
-    box-shadow:0 6px 14px rgba(255,138,61,.28);}
+    box-shadow:0 6px 14px rgba(90,70,255,.30);}
   .logo svg{width:26px;height:26px;}
   .brand{font-size:24px;font-weight:800;letter-spacing:.2px;}
   .sub{color:var(--muted);font-size:13px;margin-top:2px;}
@@ -86,14 +86,14 @@
     <div class="logo" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="3" y="4.5" width="18" height="16" rx="3.5" fill="#fff"/>
-        <rect x="3" y="4.5" width="18" height="4.5" rx="2" fill="#FFD9BE"/>
-        <circle cx="8" cy="14" r="1.5" fill="#FF8A3D"/>
-        <circle cx="12.5" cy="14" r="1.5" fill="#FF8A3D"/>
-        <circle cx="17" cy="14" r="1.5" fill="#FFC79E"/>
+        <rect x="3" y="4.5" width="18" height="4.5" rx="2" fill="#D9D6FF"/>
+        <circle cx="8" cy="14" r="1.5" fill="#5A46FF"/>
+        <circle cx="12.5" cy="14" r="1.5" fill="#5A46FF"/>
+        <circle cx="17" cy="14" r="1.5" fill="#A887FF"/>
       </svg>
     </div>
     <div>
-      <div class="brand">InCal</div>
+      <div class="brand">Novacal</div>
       <div class="sub"><span class="en">Screenshots to calendar · On-device</span><span class="zh">截图秒变日程 · 本地处理</span></div>
     </div>
     <div class="toggle" role="group" aria-label="Language">
@@ -112,7 +112,7 @@
     <h1><span class="en">Support</span><span class="zh">技术支持</span></h1>
 
     <div class="card">
-      <p class="lead"><span class="en">InCal turns screenshots, photos, and text into calendar events entirely on your device, with no uploads. If something isn't working or you want to report recognition quality, reach out anytime.</span><span class="zh">InCal 把截图、照片和文字在本机转换为日历事件，全程本地处理、不联网上传。遇到任何问题或想反馈识别效果，欢迎随时联系我们。</span></p>
+      <p class="lead"><span class="en">Novacal turns screenshots, photos, and text into calendar events entirely on your device, with no uploads. If something isn't working or you want to report recognition quality, reach out anytime.</span><span class="zh">Novacal 把截图、照片和文字在本机转换为日历事件，全程本地处理、不联网上传。遇到任何问题或想反馈识别效果，欢迎随时联系我们。</span></p>
     </div>
 
     <div class="card">
@@ -141,12 +141,12 @@
       <h2><span class="en">FAQ</span><span class="zh">常见问题</span></h2>
       <div style="padding-bottom:8px;">
         <details open>
-          <summary><span class="en">Does InCal upload my screenshots or text?</span><span class="zh">InCal 会上传我的截图或文字吗？</span></summary>
+          <summary><span class="en">Does Novacal upload my screenshots or text?</span><span class="zh">Novacal 会上传我的截图或文字吗？</span></summary>
           <p><span class="en">No. OCR and schedule parsing happen entirely on your device. The app has no backend server and never sends your content to the network.</span><span class="zh">不会。文字识别（OCR）和日程解析全部在你的设备上完成，App 没有后台服务器，也不会把内容发送到网络。</span></p>
         </details>
         <details>
           <summary><span class="en">How do I turn a screenshot or text into an event?</span><span class="zh">怎么把截图或文字变成日程？</span></summary>
-          <p><span class="en">On the home screen, paste text or import an image / scan a printed notice. InCal detects the date, time, location, and reminder and shows event cards. After reviewing, tap “Add” to save to Calendar, or export an .ics file.</span><span class="zh">在首页粘贴文字，或点击导入图片 / 扫描纸质通知，InCal 会识别出日期、时间、地点和提醒并生成事件卡片；核对无误后点击「加入」写入系统日历，或导出 .ics 文件。</span></p>
+          <p><span class="en">On the home screen, paste text or import an image / scan a printed notice. Novacal detects the date, time, location, and reminder and shows event cards. After reviewing, tap “Add” to save to Calendar, or export an .ics file.</span><span class="zh">在首页粘贴文字，或点击导入图片 / 扫描纸质通知，Novacal 会识别出日期、时间、地点和提醒并生成事件卡片；核对无误后点击「加入」写入系统日历，或导出 .ics 文件。</span></p>
         </details>
         <details>
           <summary><span class="en">What if the time or title is wrong?</span><span class="zh">识别的时间或标题不准怎么办？</span></summary>
@@ -154,19 +154,19 @@
         </details>
         <details>
           <summary><span class="en">Why did one message produce several events?</span><span class="zh">为什么一段文字识别出了多个事件？</span></summary>
-          <p><span class="en">When a message contains several dates or times, InCal may split it into multiple candidate events (up to 3). If an extra event appears, just delete that card and keep the rest.</span><span class="zh">当一段文字里包含多处日期/时间时，InCal 会尝试拆分成多个候选事件（最多 3 个）。如果出现多余的事件，直接在对应卡片上点击删除即可，其余保留。</span></p>
+          <p><span class="en">When a message contains several dates or times, Novacal may split it into multiple candidate events (up to 3). If an extra event appears, just delete that card and keep the rest.</span><span class="zh">当一段文字里包含多处日期/时间时，Novacal 会尝试拆分成多个候选事件（最多 3 个）。如果出现多余的事件，直接在对应卡片上点击删除即可，其余保留。</span></p>
         </details>
         <details>
           <summary><span class="en">What is “Scan Clipboard for Events”?</span><span class="zh">「扫描剪贴板日程」是什么？</span></summary>
-          <p><span class="en">It's an optional, off-by-default feature. When enabled, InCal checks the clipboard for a date each time you open or return to it and asks before adding — handy right after you copy something. The check runs on device, nothing is uploaded, and you can turn it off in Settings anytime.</span><span class="zh">这是一个默认关闭的可选功能。开启后，每次打开或切回 InCal 时会检查剪贴板里是否含有日期，并先询问再添加，便于你复制一段文字后快速建日程。检查在本机完成，内容不会上传，可随时在设置中关闭。</span></p>
+          <p><span class="en">It's an optional, off-by-default feature. When enabled, Novacal checks the clipboard for a date each time you open or return to it and asks before adding — handy right after you copy something. The check runs on device, nothing is uploaded, and you can turn it off in Settings anytime.</span><span class="zh">这是一个默认关闭的可选功能。开启后，每次打开或切回 Novacal 时会检查剪贴板里是否含有日期，并先询问再添加，便于你复制一段文字后快速建日程。检查在本机完成，内容不会上传，可随时在设置中关闭。</span></p>
         </details>
         <details>
           <summary><span class="en">If I delete the app, do my saved events disappear?</span><span class="zh">删除 App 后，已加入的日历事件会消失吗？</span></summary>
-          <p><span class="en">No. Events saved to the system calendar are managed by the Calendar app and are not removed when you delete InCal. InCal's local history is cleared when you uninstall.</span><span class="zh">不会。写入系统日历的事件由「日历」App 管理，删除 InCal 不会移除它们。InCal 本地的历史记录则会随卸载一并清除。</span></p>
+          <p><span class="en">No. Events saved to the system calendar are managed by the Calendar app and are not removed when you delete Novacal. Novacal's local history is cleared when you uninstall.</span><span class="zh">不会。写入系统日历的事件由「日历」App 管理，删除 Novacal 不会移除它们。Novacal 本地的历史记录则会随卸载一并清除。</span></p>
         </details>
         <details>
           <summary><span class="en">Which iOS versions are supported?</span><span class="zh">支持哪些系统版本？</span></summary>
-          <p><span class="en">InCal requires iOS 17 or later and supports Chinese and English.</span><span class="zh">InCal 需要 iOS 17 或更高版本，支持中文与英文。</span></p>
+          <p><span class="en">Novacal requires iOS 17 or later and supports Chinese and English.</span><span class="zh">Novacal 需要 iOS 17 或更高版本，支持中文与英文。</span></p>
         </details>
       </div>
     </div>
@@ -180,23 +180,23 @@
     <div class="card tight">
       <section>
         <h2><span class="en">Overview</span><span class="zh">概述</span></h2>
-        <p><span class="en">InCal is a local-first schedule recognition tool. Your screenshots, photos, and text are processed on your device by default and are not uploaded to a server. This policy explains how we handle information related to you.</span><span class="zh">InCal 是一款本地优先的日程识别工具。我们的核心原则是：你的截图、照片和文字默认只在你的设备上处理，不会上传到任何服务器。本隐私政策说明我们如何处理与你相关的信息。</span></p>
+        <p><span class="en">Novacal is a local-first schedule recognition tool. Your screenshots, photos, and text are processed on your device by default and are not uploaded to a server. This policy explains how we handle information related to you.</span><span class="zh">Novacal 是一款本地优先的日程识别工具。我们的核心原则是：你的截图、照片和文字默认只在你的设备上处理，不会上传到任何服务器。本隐私政策说明我们如何处理与你相关的信息。</span></p>
       </section>
       <section>
         <h2><span class="en">On-device processing</span><span class="zh">本地处理</span></h2>
-        <p><span class="en">Image OCR and schedule parsing happen locally on your device. InCal does not include a backend server and does not send your images or text content to the network.</span><span class="zh">图片的文字识别（OCR）、日程解析等全部在你的设备本地完成。InCal 不包含任何后台服务器，也不会将你的图片或文字内容发送到网络。</span></p>
+        <p><span class="en">Image OCR and schedule parsing happen locally on your device. Novacal does not include a backend server and does not send your images or text content to the network.</span><span class="zh">图片的文字识别（OCR）、日程解析等全部在你的设备本地完成。Novacal 不包含任何后台服务器，也不会将你的图片或文字内容发送到网络。</span></p>
       </section>
       <section>
         <h2><span class="en">Clipboard</span><span class="zh">剪贴板</span></h2>
-        <p><span class="en">Only when you turn on “Scan Clipboard for Events” in Settings does InCal check the clipboard for dates when you open or return to the app. The check runs on device, you are always asked before anything is added, and content is never uploaded. This feature is off by default and can be disabled at any time in Settings.</span><span class="zh">仅当你在设置中开启「扫描剪贴板日程」后，InCal 才会在打开或切回 App 时检查剪贴板里是否含有日期。该检查在本机完成，识别到日程会先征得你同意再添加，内容不会上传。此功能默认关闭，可随时在设置中关闭。</span></p>
+        <p><span class="en">Only when you turn on “Scan Clipboard for Events” in Settings does Novacal check the clipboard for dates when you open or return to the app. The check runs on device, you are always asked before anything is added, and content is never uploaded. This feature is off by default and can be disabled at any time in Settings.</span><span class="zh">仅当你在设置中开启「扫描剪贴板日程」后，Novacal 才会在打开或切回 App 时检查剪贴板里是否含有日期。该检查在本机完成，识别到日程会先征得你同意再添加，内容不会上传。此功能默认关闭，可随时在设置中关闭。</span></p>
       </section>
       <section>
         <h2><span class="en">Permissions we request</span><span class="zh">我们申请的权限</span></h2>
-        <p><span class="en">To provide its features, InCal may request these permissions:
+        <p><span class="en">To provide its features, Novacal may request these permissions:
 • Photos: reads only the images you choose for recognition. The app does not scan your whole library.
 • Camera: used to scan printed notices or schedules only when you start scanning.
 • Calendar: used to save confirmed events to the system calendar.
-You can disable these permissions in Settings at any time. Related features will stop working when disabled.</span><span class="zh">为提供功能，InCal 可能向你申请以下权限：
+You can disable these permissions in Settings at any time. Related features will stop working when disabled.</span><span class="zh">为提供功能，Novacal 可能向你申请以下权限：
 • 照片：仅读取你主动选择的图片用于识别，App 不会扫描你的整个相册。
 • 相机：用于「扫描」纸质通知或排班表，仅在你主动拍摄时使用。
 • 日历：用于将你确认后的事件写入系统日历。
@@ -216,11 +216,11 @@ You can disable these permissions in Settings at any time. Related features will
       </section>
       <section>
         <h2><span class="en">Third-party services</span><span class="zh">第三方服务</span></h2>
-        <p><span class="en">InCal uses local Apple system capabilities, such as Vision text recognition and Calendar, to provide its features. These processes also happen on your device. We do not share your content with third parties for advertising or analytics.</span><span class="zh">InCal 使用 Apple 系统自带的本地能力（如 Vision 文字识别、系统日历）完成功能，这些处理同样在你的设备上进行。我们不会为了广告或分析目的与第三方共享你的内容。</span></p>
+        <p><span class="en">Novacal uses local Apple system capabilities, such as Vision text recognition and Calendar, to provide its features. These processes also happen on your device. We do not share your content with third parties for advertising or analytics.</span><span class="zh">Novacal 使用 Apple 系统自带的本地能力（如 Vision 文字识别、系统日历）完成功能，这些处理同样在你的设备上进行。我们不会为了广告或分析目的与第三方共享你的内容。</span></p>
       </section>
       <section>
         <h2><span class="en">Children's privacy</span><span class="zh">儿童隐私</span></h2>
-        <p><span class="en">InCal is not directed to children under 13 and does not knowingly collect children's personal information.</span><span class="zh">InCal 不面向 13 周岁以下儿童，也不会有意收集儿童的个人信息。</span></p>
+        <p><span class="en">Novacal is not directed to children under 13 and does not knowingly collect children's personal information.</span><span class="zh">Novacal 不面向 13 周岁以下儿童，也不会有意收集儿童的个人信息。</span></p>
       </section>
       <section>
         <h2><span class="en">Policy updates</span><span class="zh">政策更新</span></h2>
@@ -233,7 +233,7 @@ You can disable these permissions in Settings at any time. Related features will
     </div>
   </div>
 
-  <footer>© 2026 InCal</footer>
+  <footer>© 2026 Novacal</footer>
 </div>
 
 <script>
