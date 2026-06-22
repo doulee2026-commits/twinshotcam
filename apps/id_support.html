@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SnapID Studio — Support &amp; Privacy</title>
+<style>
+  :root{
+    --bg:#f5f4fb; --card:#ffffff; --ink:#1d1b2e; --sub:#6c6a83;
+    --accent:#7470f2; --line:rgba(29,27,46,.08); --chip:#ecebf7;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14131c; --card:#1d1b29; --ink:#f1f0f7; --sub:#a6a4bd;
+           --accent:#8f8bff; --line:rgba(255,255,255,.10); --chip:#2a2840; }
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{ max-width:760px; margin:0 auto; padding:24px 18px 64px; }
+  header{ display:flex; align-items:center; gap:12px; margin-bottom:18px; flex-wrap:wrap; }
+  .logo{ width:40px; height:40px; border-radius:10px; background:linear-gradient(135deg,#8f8bff,#6f6af0);
+         display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:18px; }
+  h1{ font-size:20px; margin:0; }
+  .spacer{ flex:1; }
+  .langs button{ border:1px solid var(--line); background:var(--card); color:var(--sub);
+         padding:6px 12px; border-radius:999px; font-size:13px; cursor:pointer; margin-left:6px; }
+  .langs button.active{ background:var(--accent); border-color:var(--accent); color:#fff; }
+  .tabs{ display:flex; gap:8px; margin:6px 0 20px; }
+  .tabs button{ flex:1; border:none; background:var(--chip); color:var(--ink);
+         padding:11px 10px; border-radius:12px; font-size:15px; font-weight:600; cursor:pointer; }
+  .tabs button.active{ background:var(--accent); color:#fff; }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 20px; margin-bottom:16px; }
+  h2{ font-size:18px; margin:2px 0 12px; }
+  h3{ font-size:15px; margin:18px 0 4px; }
+  p{ margin:8px 0; color:var(--ink); }
+  .muted{ color:var(--sub); font-size:14px; }
+  ul{ margin:8px 0; padding-left:20px; }
+  li{ margin:5px 0; }
+  a{ color:var(--accent); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+  .mailbtn{ display:inline-block; background:var(--accent); color:#fff; padding:11px 20px;
+            border-radius:999px; font-weight:600; margin-top:6px; }
+  .qa{ border-top:1px solid var(--line); padding-top:14px; margin-top:14px; }
+  .qa:first-of-type{ border-top:none; padding-top:0; margin-top:0; }
+  .q{ font-weight:600; }
+  footer{ text-align:center; color:var(--sub); font-size:13px; margin-top:24px; }
+  [data-lang]{ display:none; }
+  html[lang="en"] [data-lang="en"]{ display:block; }
+  html[lang="zh"] [data-lang="zh"]{ display:block; }
+  span[data-lang]{ display:none; }
+  html[lang="en"] span[data-lang="en"]{ display:inline; }
+  html[lang="zh"] span[data-lang="zh"]{ display:inline; }
+  .panel{ display:none; }
+  .panel.show{ display:block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">S</div>
+    <h1>SnapID Studio</h1>
+    <div class="spacer"></div>
+    <div class="langs">
+      <button id="lang-en" onclick="setLang('en')">EN</button>
+      <button id="lang-zh" onclick="setLang('zh')">中文</button>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button id="tab-support" class="active" onclick="setTab('support')">
+      <span data-lang="en">Support</span><span data-lang="zh">技术支持</span>
+    </button>
+    <button id="tab-privacy" onclick="setTab('privacy')">
+      <span data-lang="en">Privacy Policy</span><span data-lang="zh">隐私政策</span>
+    </button>
+  </div>
+
+  <!-- ===================== SUPPORT ===================== -->
+  <section id="panel-support" class="panel show">
+    <div class="card">
+      <div data-lang="en">
+        <h2>Support</h2>
+        <p>SnapID Studio creates compliant ID and passport photos entirely on your device — your photos never leave your iPhone.</p>
+        <p class="muted">The fastest way to reach us is email. We usually reply within 1–2 business days.</p>
+        <a class="mailbtn" href="mailto:doulee2026@hotmail.com?subject=SnapID%20Studio%20Support">Email Support</a>
+        <p class="muted" style="margin-top:10px">doulee2026@hotmail.com</p>
+      </div>
+      <div data-lang="zh">
+        <h2>技术支持</h2>
+        <p>SnapID 证件照在你的设备本地生成合规证件照与护照照片，照片不会离开你的手机。</p>
+        <p class="muted">联系我们最快的方式是邮件，我们通常在 1–2 个工作日内回复。</p>
+        <a class="mailbtn" href="mailto:doulee2026@hotmail.com?subject=SnapID%20%E8%AF%81%E4%BB%B6%E7%85%A7%E5%8F%8D%E9%A6%88">邮件联系</a>
+        <p class="muted" style="margin-top:10px">doulee2026@hotmail.com</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div data-lang="en">
+        <h2>Frequently asked questions</h2>
+        <div class="qa"><p class="q">Where are my photos processed?</p>
+          <p>Everything runs locally using Apple's Vision framework. There is no server and no account — your images are never uploaded.</p></div>
+        <div class="qa"><p class="q">How do I remove the watermark?</p>
+          <p>Free export adds a watermark. A one-time in-app purchase (Pro Unlock) permanently removes it and exports full-quality images. No subscription, no auto-renewal.</p></div>
+        <div class="qa"><p class="q">I bought Pro but it's locked on a new phone.</p>
+          <p>Open the app's Settings page and tap “Restore Purchases”. Make sure you're signed in with the same Apple ID used for the purchase.</p></div>
+        <div class="qa"><p class="q">How do I get a refund?</p>
+          <p>Refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, find SnapID Studio, and request a refund.</p></div>
+        <div class="qa"><p class="q">Which photo sizes are supported?</p>
+          <p>39 specifications across 6 categories — standard ID sizes, language tests (IELTS/TOEFL/GRE/PTE), students, travel visas, professional licenses, and government use.</p></div>
+        <div class="qa"><p class="q">The compliance check keeps warning me.</p>
+          <p>It only blocks when no face / multiple faces are found, or the head is clearly turned or tilted. Other notes (background, framing) are advisory and never stop you from continuing.</p></div>
+        <div class="qa"><p class="q">Will my photo pass an official review?</p>
+          <p>Requirements vary by document, visa, and exam. SnapID helps you match common specs, but acceptance is decided by the receiving authority.</p></div>
+      </div>
+      <div data-lang="zh">
+        <h2>常见问题</h2>
+        <div class="qa"><p class="q">我的照片在哪里处理？</p>
+          <p>全部基于 Apple Vision 框架在本机完成，无服务器、无需账号，照片不会上传。</p></div>
+        <div class="qa"><p class="q">如何去除水印？</p>
+          <p>免费导出带水印。一次性内购（Pro 解锁）可永久去除水印并导出高清原图，无订阅、无自动续费。</p></div>
+        <div class="qa"><p class="q">买了 Pro，换新手机后又被锁了。</p>
+          <p>进入 App 的设置页，点击「恢复购买」。请确认登录的是当初购买所用的同一个 Apple ID。</p></div>
+        <div class="qa"><p class="q">如何申请退款？</p>
+          <p>退款由 Apple 处理。访问 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>，登录后找到 SnapID Studio 申请退款。</p></div>
+        <div class="qa"><p class="q">支持哪些证件照尺寸？</p>
+          <p>覆盖 6 大分类、39 种规格——寸照、语言考试（雅思/托福/GRE/PTE）、学生、出国签证、职业资格、社保政务。</p></div>
+        <div class="qa"><p class="q">合规检查老是提示我。</p>
+          <p>只有「未检测到人脸 / 画面多张脸 / 头部明显侧转或倾斜」才会拦截；背景、构图等只是提示，不会阻止你继续。</p></div>
+        <div class="qa"><p class="q">生成的照片能通过官方审核吗？</p>
+          <p>不同证件、签证、考试要求各异。本应用帮你匹配常用规格，但是否通过由受理机构决定。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRIVACY ===================== -->
+  <section id="panel-privacy" class="panel">
+    <div class="card">
+      <!-- EN -->
+      <div data-lang="en">
+        <h2>SnapID Studio Privacy Policy</h2>
+        <p class="muted">Effective date: June 20, 2026</p>
+        <p>SnapID Studio (the “App”) respects and protects your privacy. This policy explains how the App handles information related to you. Please read it carefully before use.</p>
+
+        <h3>1. Core principle: on-device processing</h3>
+        <p>All image processing in the App (portrait cutout, auto-framing, background replacement, beautify, outfit, and 6-inch layout) runs entirely on your device using Apple's built-in Vision framework. The App has no server, requires no account or sign-in, and your photos and image data are never uploaded to any server.</p>
+
+        <h3>2. Information we do not collect</h3>
+        <p>The App does not collect, store, or share: photo or image content; personal identifiers such as name, phone number, or ID number; device identifiers; location; contacts; or usage/analytics data.</p>
+
+        <h3>3. Permissions</h3>
+        <ul>
+          <li>Camera: used only when you actively take a photo, to capture an ID photo.</li>
+          <li>Photo library (add): used only when you confirm export, to save the generated ID photo to your album.</li>
+          <li>Choosing a photo: done through the system photo picker; the App receives only the single photo you select and cannot access your entire library.</li>
+        </ul>
+        <p>You can review and manage these permissions anytime in Settings › Privacy &amp; Security.</p>
+
+        <h3>4. Local storage</h3>
+        <p>Temporary data created while making a photo is stored only on your device to complete the current task; exported files are managed by the system once you save them to your album.</p>
+
+        <h3>5. Third-party services</h3>
+        <p>The App integrates no third-party analytics, advertising, or tracking SDKs. The only system services involved are the App Store (rating, sharing, and in-app purchases are provided by Apple and governed by Apple's privacy policy).</p>
+
+        <h3>5.1 In-app purchases</h3>
+        <p>The App offers a one-time “Pro Unlock” in-app purchase (to remove the export watermark). Purchase, payment, and restore are handled entirely by the Apple App Store; the App does not collect or store your payment information. Unlock status is verified on-device from the system purchase receipt and nothing is uploaded.</p>
+
+        <h3>6. Children's privacy</h3>
+        <p>The App is intended for general audiences, is not directed to children under 13, and does not knowingly collect children's personal information.</p>
+
+        <h3>7. Changes to this policy</h3>
+        <p>We may update this policy from time to time. Material changes will be announced through in-app release notes or on this page; continued use means you accept the updated policy.</p>
+
+        <h3>8. Contact us</h3>
+        <p>If you have any questions about this privacy policy, contact: <a href="mailto:doulee2026@hotmail.com">doulee2026@hotmail.com</a></p>
+      </div>
+
+      <!-- ZH -->
+      <div data-lang="zh">
+        <h2>SnapID Studio 隐私政策</h2>
+        <p class="muted">生效日期：2026 年 6 月 20 日</p>
+        <p>SnapID Studio（以下简称“本应用”）尊重并保护你的隐私。本政策说明本应用如何处理与你相关的信息，请在使用前仔细阅读。</p>
+
+        <h3>1. 核心原则：本机处理</h3>
+        <p>本应用的全部图像处理（人像分割抠图、自动取景、更换底色、美颜、换装、六寸排版）均在你的设备本地完成，使用 Apple 系统内置的 Vision 框架。本应用不设服务器，无需注册或登录账号，你的照片与图像数据不会被上传到任何服务器。</p>
+
+        <h3>2. 我们不收集的信息</h3>
+        <p>本应用不收集、不存储、不共享：照片或图像内容；姓名、手机号、证件号等个人身份信息；设备标识符；地理位置；通讯录；使用行为或统计分析数据。</p>
+
+        <h3>3. 权限说明</h3>
+        <ul>
+          <li>相机：仅在你主动拍摄时使用，用于现场拍摄证件照。</li>
+          <li>相册（添加）：仅在你确认导出时，用于把生成的证件照保存到你的相册。</li>
+          <li>选择照片：通过系统相册选择器进行，本应用仅获得你所选的那张照片，无法访问你的整个相册。</li>
+        </ul>
+        <p>你可随时在“系统设置 &gt; 隐私与安全性”中查看与管理上述权限。</p>
+
+        <h3>4. 本地存储</h3>
+        <p>制作过程中产生的临时数据仅保存在你的设备本地，用于完成当前制作；导出文件在你保存到相册后由系统管理。</p>
+
+        <h3>5. 第三方服务</h3>
+        <p>本应用不集成任何第三方统计、广告或追踪 SDK。涉及的系统服务仅限 App Store（评分、分享与应用内购买由 Apple 提供，并受 Apple 隐私政策约束）。</p>
+
+        <h3>5.1 应用内购买</h3>
+        <p>本应用提供一次性「Pro 解锁」内购（用于去除导出水印）。购买、支付与恢复均由 Apple App Store 处理，本应用不收集、不存储你的支付信息；解锁状态由系统的购买凭证在本机校验，不上传任何数据。</p>
+
+        <h3>6. 儿童隐私</h3>
+        <p>本应用面向一般用户，不针对 13 岁以下儿童，也不会有意收集儿童的个人信息。</p>
+
+        <h3>7. 政策更新</h3>
+        <p>我们可能不时更新本政策。重大变更将通过应用内更新说明或本页面公示，继续使用即表示你接受更新后的政策。</p>
+
+        <h3>8. 联系我们</h3>
+        <p>如对本隐私政策有任何疑问，请联系：<a href="mailto:doulee2026@hotmail.com">doulee2026@hotmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 SnapID Studio · doulee2026@hotmail.com</footer>
+</div>
+
+<script>
+  function setLang(l){
+    document.documentElement.lang = (l === 'zh') ? 'zh' : 'en';
+    document.getElementById('lang-en').classList.toggle('active', l === 'en');
+    document.getElementById('lang-zh').classList.toggle('active', l === 'zh');
+    try{ localStorage.setItem('snapid_lang', l); }catch(e){}
+  }
+  function setTab(t){
+    var sup = t === 'support';
+    document.getElementById('panel-support').classList.toggle('show', sup);
+    document.getElementById('panel-privacy').classList.toggle('show', !sup);
+    document.getElementById('tab-support').classList.toggle('active', sup);
+    document.getElementById('tab-privacy').classList.toggle('active', !sup);
+    if(location.hash !== (sup ? '#support' : '#privacy')){
+      history.replaceState(null, '', sup ? '#support' : '#privacy');
+    }
+  }
+  // 默认英文；如本地存过偏好则沿用。支持 #privacy 直接定位隐私页（App Store 隐私政策 URL 用）。
+  (function(){
+    var saved = null;
+    try{ saved = localStorage.getItem('snapid_lang'); }catch(e){}
+    setLang(saved === 'zh' ? 'zh' : 'en');
+    setTab(location.hash === '#privacy' ? 'privacy' : 'support');
+  })();
+</script>
+</body>
+</html>
