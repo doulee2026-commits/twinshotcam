@@ -147,6 +147,10 @@
         <h3>1. Core principle: on-device processing</h3>
         <p>All image processing in the App (portrait cutout, auto-framing, background replacement, beautify, outfit, and 6-inch layout) runs entirely on your device using Apple's built-in Vision framework. The App has no server, requires no account or sign-in, and your photos and image data are never uploaded to any server.</p>
 
+        <h3>1.1 Face data and facial analysis</h3>
+        <p>When you actively take or select a photo containing a face, the App temporarily processes that photo on-device together with a person-segmentation mask, face bounding box, facial landmark positions, head-pose angles, and capture-quality indicators produced by Apple Vision. This data is used only to separate the person from the background, frame the photo automatically, and check face count, position, pose, sharpness, and composition so the App can create an ID photo and show possible compliance guidance.</p>
+        <p>The App does not perform face recognition or identify any person, does not create a persistent face template, and does not use face data for authentication, advertising, analytics, or profiling. The developer does not collect this face data. It never leaves your device; it is not uploaded, sold, disclosed, or shared with any third-party service, and it is not stored on developer or third-party servers. Temporary analysis results remain only in device memory during active processing and are discarded after analysis or the current editing session ends. The source photo and edited result likewise remain only in the current local session; an exported photo is placed in your system photo library only when you explicitly choose to save it, where you control its retention and deletion.</p>
+
         <h3>2. Information we do not collect</h3>
         <p>The App does not collect, store, or share: photo or image content; personal identifiers such as name, phone number, or ID number; device identifiers; location; contacts; or usage/analytics data.</p>
 
@@ -162,7 +166,7 @@
         <p>Temporary data created while making a photo is stored only on your device to complete the current task; exported files are managed by the system once you save them to your album.</p>
 
         <h3>5. Third-party services</h3>
-        <p>The App integrates no third-party analytics, advertising, or tracking SDKs. The only system services involved are the App Store (rating, sharing, and in-app purchases are provided by Apple and governed by Apple's privacy policy).</p>
+        <p>The App integrates no third-party analytics, advertising, or tracking SDKs. The only system service involved is the App Store (in-app purchases are provided by Apple and governed by Apple's privacy policy).</p>
 
         <h3>5.1 In-app purchases</h3>
         <p>The App offers a one-time “Pro Unlock” in-app purchase (to remove the export watermark). Purchase, payment, and restore are handled entirely by the Apple App Store; the App does not collect or store your payment information. Unlock status is verified on-device from the system purchase receipt and nothing is uploaded.</p>
@@ -186,6 +190,10 @@
         <h3>1. 核心原则：本机处理</h3>
         <p>本应用的全部图像处理（人像分割抠图、自动取景、更换底色、美颜、换装、六寸排版）均在你的设备本地完成，使用 Apple 系统内置的 Vision 框架。本应用不设服务器，无需注册或登录账号，你的照片与图像数据不会被上传到任何服务器。</p>
 
+        <h3>1.1 人脸数据与人脸分析</h3>
+        <p>当你主动拍摄或选择包含人脸的照片时，本应用会在设备本地临时处理该照片以及由 Apple Vision 生成的人像分割遮罩、人脸边界框、面部特征点位置、头部姿态角度和拍摄质量指标。这些数据仅用于从背景中分离人像、自动取景，以及检查照片中的人脸数量、位置、姿态、清晰度和构图，从而生成证件照并向你提示可能的合规问题。</p>
+        <p>本应用不会进行人脸识别或确认人物身份，不会创建持久的人脸模板，也不会将人脸数据用于身份验证、广告、分析或用户画像。开发者不会收集这些人脸数据；它们不会离开你的设备，不会上传、出售、披露或分享给 Apple 以外的任何第三方服务，也不会存储在开发者或第三方服务器上。临时分析结果只在当前处理期间保留于设备内存中，并在分析或当前编辑会话结束后丢弃。原始照片和编辑结果也只保留在当前本地会话中；只有当你主动选择保存时，导出照片才会存入你的系统相册，并由你自行管理和删除。</p>
+
         <h3>2. 我们不收集的信息</h3>
         <p>本应用不收集、不存储、不共享：照片或图像内容；姓名、手机号、证件号等个人身份信息；设备标识符；地理位置；通讯录；使用行为或统计分析数据。</p>
 
@@ -201,7 +209,7 @@
         <p>制作过程中产生的临时数据仅保存在你的设备本地，用于完成当前制作；导出文件在你保存到相册后由系统管理。</p>
 
         <h3>5. 第三方服务</h3>
-        <p>本应用不集成任何第三方统计、广告或追踪 SDK。涉及的系统服务仅限 App Store（评分、分享与应用内购买由 Apple 提供，并受 Apple 隐私政策约束）。</p>
+        <p>本应用不集成任何第三方统计、广告或追踪 SDK。涉及的系统服务仅限 App Store（应用内购买由 Apple 提供，并受 Apple 隐私政策约束）。</p>
 
         <h3>5.1 应用内购买</h3>
         <p>本应用提供一次性「Pro 解锁」内购（用于去除导出水印）。购买、支付与恢复均由 Apple App Store 处理，本应用不收集、不存储你的支付信息；解锁状态由系统的购买凭证在本机校验，不上传任何数据。</p>
